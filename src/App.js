@@ -29,7 +29,7 @@ function App() {
       <Formulario 
         saveSerachLyrics={saveSerachLyrics}
       />
-      <div className="container">
+      <div className="container mt-5">
         <div className="row">
           <div className="col-md-6">Artista</div>
           <div className="col-md-6">

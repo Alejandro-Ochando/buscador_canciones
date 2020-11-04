@@ -7,8 +7,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 .background {
-  width: auto;
   background: rgb(87,7,255);
   background: linear-gradient(34deg,
               rgba(87,7,255,1) 0%, 
@@ -97,12 +97,16 @@ h2 {
   white-space: pre-wrap;
 }
 
-@media (max-width: 383px) {
+@media (max-width: 600px) {
+  legend {
+    width: 200px;
+  }
+  
   legend::before {
-    width: calc(80%);
+    width: calc(120%);
     height: 78px;
     z-index:-1;
-    left: 40px;
+    left: -20px;
     right: -30px;
   }
 }
