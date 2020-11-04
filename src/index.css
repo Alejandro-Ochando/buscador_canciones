@@ -10,7 +10,10 @@ body {
 .background {
   width: auto;
   background: rgb(87,7,255);
-  background: linear-gradient(34deg, rgba(87,7,255,1) 0%, rgba(127,9,255,1) 22%, rgba(255,14,255,1) 100%);
+  background: linear-gradient(34deg,
+              rgba(87,7,255,1) 0%, 
+              rgba(127,9,255,1) 22%,
+              rgba(255,14,255,1) 100%);
 }
 
 legend {
@@ -66,6 +69,34 @@ input {
   font-weight: bold !important;
 }
 
+h2 {
+  margin-top: 1rem ;
+  margin-bottom: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+.border {
+  border-radius: 3rem;
+  height: 3px;
+  margin: 0px;
+  padding: 0px;
+  text-align:center;
+  padding-bottom:5px;
+  background: 
+    linear-gradient(
+      34deg, 
+      rgba(255,14,255,1) 0%,
+      rgba(127,9,255,1) 65%,
+      rgba(87,7,255,1) 100%
+    )
+    repeat; 
+  background-size:100% 5px ;
+  margin-bottom: 2rem;
+}
+
+.letra {
+  white-space: pre-wrap;
+}
+
 @media (max-width: 383px) {
   legend::before {
     width: calc(80%);
@@ -75,3 +106,4 @@ input {
     right: -30px;
   }
 }
+

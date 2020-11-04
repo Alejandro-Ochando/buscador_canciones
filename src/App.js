@@ -1,6 +1,8 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import Formulario from './components/Formulario';
+import Cancion from './components/Cancion';
 import axios from 'axios';
+
 
 function App() {
   
@@ -16,7 +18,6 @@ function App() {
       const url = `https://api.lyrics.ovh/v1/${artist}/${song}`
       const result = await axios.get(url);
       saveLyrics(result.data.lyrics);
-      console.log(lyrics);
     }
 
     consultAPIletter();
@@ -28,6 +29,16 @@ function App() {
       <Formulario 
         saveSerachLyrics={saveSerachLyrics}
       />
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6">Artista</div>
+          <div className="col-md-6">
+            <Cancion 
+              lyrics={lyrics}
+            />
+          </div>
+        </div>
+      </div>
     </Fragment>
   );
 }
