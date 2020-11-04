@@ -1,8 +1,11 @@
-
+import React, { Fragment } from 'react';
+import Formulario from './components/Formulario';
 
 function App() {
   return (
-    <h1>Buscador de canciones</h1>
+    <Fragment>
+      <Formulario />
+    </Fragment>
   );
 }
 

@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", 
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;  
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.background {
+  background: rgb(87,7,255);
+  background: -moz-linear-gradient(34deg, rgba(87,7,255,1) 0%, rgba(127,9,255,1) 22%, rgba(255,14,255,1) 100%);background: -webkit-linear-gradient(34deg, rgba(87,7,255,1) 0%, rgba(127,9,255,1) 22%, rgba(255,14,255,1) 100%);
+  background: linear-gradient(34deg, rgba(87,7,255,1) 0%, rgba(127,9,255,1) 22%, rgba(255,14,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5707ff",endColorstr="#ff0eff",GradientType=1);
+
+}
+
+legend {
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  width: auto;
+  margin:0;
+  margin-bottom: 40px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+legend::before {
+  position: absolute;
+  content: '';
+  width: calc(120% );
+  padding: 50px auto;
+  display: block;
+  border: 2px solid white;
+  height: 40px;
+  z-index:-1;
+  left: -35px;
+  right: -30px;
+  border-radius: 0.3rem;
+  transform: rotate(-1.2deg);
+  transition: transform .3s ease;
+}
+
+legend:hover::before{
+  transform: rotate(2deg);
+}
+
+form.card{
+  border: none;
+}
+
+label {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 22px;
+}
+.btn-outline-light:hover {
+ color: rgb(87,7,255);
+}
