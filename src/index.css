@@ -56,3 +56,12 @@ label {
 .btn-outline-light:hover {
  color: rgb(87,7,255);
 }
+
+input::placeholder {
+  color:  rgba(127,9,255,1) !important;
+  font-weight: normal !important;
+}
+input {
+  color:  rgba(127,9,255,1) !important;
+  font-weight: bold !important;
+}

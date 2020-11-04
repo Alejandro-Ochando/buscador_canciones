@@ -1,11 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Formulario = () => {
+    
+    const [ search, saveSearch ] = useState ({
+        artist: '',
+        song: ''
+    });
+
+    const [ error, saveError] = useState(false);
+    
+    //Funcion a cada input para leer el contenido
+    const updateState = e => {
+        saveSearch({
+            ...search,
+            [e.target.name] : e.target.value
+        })
+    };
+
+    const {artist, song } = search;
+
+    const handlerSubmit = e => {
+        e.preventDefault();
+        if(artist.trim() === '' || song.trim() === '') {
+            saveError(true);
+            return;
+           
+        }   
+        saveError(false);
+    }
+
     return ( 
         <div className="background">
             <div className="container">
                <div className="row">
                     <form 
+                        onSubmit={handlerSubmit}
                         className="col card text-white bg-transparent mb-5 pt-5 pb-2"
                     >
                         <fieldset>
@@ -17,8 +46,11 @@ const Formulario = () => {
                                         <input
                                             type="text"
                                             className="form-control"
-                                            name="artista"
+                                            name="artist"
                                             placeholder="Nombre Artista"
+                                            onChange={updateState}
+                                            value={artist}
+                                            
                                         />
                                     </div>
                                 </div>
@@ -28,8 +60,10 @@ const Formulario = () => {
                                         <input
                                             type="text"
                                             className="form-control"
-                                            name="cancion"
+                                            name="song"
                                             placeholder="Nombre Canción"
+                                            onChange={updateState}
+                                            value={song}
                                         />
                                     </div>
                                 </div>
