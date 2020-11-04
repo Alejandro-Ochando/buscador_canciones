@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import Error from './Error';
 
-const Formulario = () => {
+const Formulario = ({ saveSerachLyrics }) => {
     
     const [ search, saveSearch ] = useState ({
         artist: '',
@@ -27,10 +28,12 @@ const Formulario = () => {
            
         }   
         saveError(false);
+        saveSerachLyrics(search);
     }
 
     return ( 
         <div className="background">
+            { error ? <Error mensaje="Todos los campos son obligatorios" /> : null}
             <div className="container">
                <div className="row">
                     <form 
