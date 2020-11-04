@@ -8,11 +8,10 @@ body {
 }
 
 .background {
+  width: 100%;
   background: rgb(87,7,255);
-  background: -moz-linear-gradient(34deg, rgba(87,7,255,1) 0%, rgba(127,9,255,1) 22%, rgba(255,14,255,1) 100%);background: -webkit-linear-gradient(34deg, rgba(87,7,255,1) 0%, rgba(127,9,255,1) 22%, rgba(255,14,255,1) 100%);
   background: linear-gradient(34deg, rgba(87,7,255,1) 0%, rgba(127,9,255,1) 22%, rgba(255,14,255,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5707ff",endColorstr="#ff0eff",GradientType=1);
-
+  
 }
 
 legend {
