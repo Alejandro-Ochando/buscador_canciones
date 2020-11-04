@@ -109,5 +109,13 @@ h2 {
     left: -20px;
     right: -30px;
   }
+
+  .background {
+    background: rgb(87,7,255);
+    background: linear-gradient(34deg,
+                rgba(87,7,255,1) 0%, 
+                rgba(127,9,255,1) 33%,
+                rgba(255,14,255,1) 100%);
+  }
 }
 
