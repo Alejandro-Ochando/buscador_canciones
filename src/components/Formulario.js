@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Error from './Error';
 
+
 const Formulario = ({ saveSerachLyrics }) => {
     
     const [ search, saveSearch ] = useState ({
@@ -25,11 +26,11 @@ const Formulario = ({ saveSerachLyrics }) => {
         if(artist.trim() === '' || song.trim() === '') {
             saveError(true);
             return;
-           
         }   
         saveError(false);
         saveSerachLyrics(search);
     }
+
 
     return ( 
         <div className="background">
@@ -53,7 +54,6 @@ const Formulario = ({ saveSerachLyrics }) => {
                                             placeholder="Nombre Artista"
                                             onChange={updateState}
                                             value={artist}
-                                            
                                         />
                                     </div>
                                 </div>
@@ -80,8 +80,6 @@ const Formulario = ({ saveSerachLyrics }) => {
                 </div>
             </div>
         </div>
-        
-
      );
 }
  

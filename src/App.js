@@ -9,7 +9,7 @@ function App() {
   
   const [ searchLyrics, saveSerachLyrics ] = useState ({});
   const [ lyrics, saveLyrics ] = useState('');
-  const [ info, saveInfo ] = useState('');
+  const [ info, saveInfo ] = useState({});
 
   useEffect(()=> {
     if(Object.keys(searchLyrics).length === 0 ) return;
@@ -25,6 +25,7 @@ function App() {
       ]);
       
       saveLyrics(lyrics.data.lyrics);
+      setTimeout(1000);
       saveInfo(info.data.artists[0]);
 
     }

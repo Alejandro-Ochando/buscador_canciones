@@ -8,12 +8,9 @@ const Cancion = ({ lyrics }) => {
         <Fragment>
             <h2>Letra de la Canción</h2>
             <div className="border"></div>
-            <p className="letra">{lyrics}</p>
+            <p className="letra text-justify">{lyrics}</p>
         </Fragment>
     );
 } 
     
-
- 
-
 export default Cancion;

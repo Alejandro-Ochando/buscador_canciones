@@ -7,7 +7,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 .background {
   background: rgb(87,7,255);
   background: linear-gradient(34deg,
@@ -95,7 +94,33 @@ h2 {
 
 .letra {
   white-space: pre-wrap;
+  
 }
+
+.card img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.card {
+  background-color: #44c2f02a;
+  border-radius: 1rem;
+}
+.card-body i {
+  font-size: 3rem;
+  margin-right: 3rem;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+.fa-twitter {
+  color: #0084b4;
+}
+.fa-lastfm {
+  color: #d51007;
+}
+
 
 @media (max-width: 600px) {
   legend {
@@ -118,4 +143,3 @@ h2 {
                 rgba(255,14,255,1) 100%);
   }
 }
-
